@@ -11,10 +11,7 @@ export class ProductsPage {
         this.cartButton = page.locator('.shopping_cart_link');
         this.cartBadge = page.locator('.shopping_cart_badge');
         
-        // ⚠️ CORREÇÃO CRÍTICA AQUI ⚠️
-        // O seletor '[data-test="secondary-header"]' é uma DIV (o cabeçalho).
-        // O método .selectOption() PRECISA apontar para a tag <select>.
-        // O seletor correto no Sauce Demo é '[data-test="product-sort-container"]'.
+        
         this.filter = page.locator('[data-test="product-sort-container"]');
     }
 
